@@ -17,23 +17,40 @@
     <nav class="navbar navbar-light bg-light">
         <form class="form-inline">
             <button class="btn btn-outline-success" type="button"><a href="./login.html">Log Out</button></a>
-            
+
         </form>
 
     </nav>
 
-    <div >
+    <div>
         <h1>WELL COME</h1>
         <p id="new">
 
         </p>
-        <p id="new">
-            
+        <p id="new1">
+
         </p>
-        
+        <p id="new2">
+
+        </p>
+
 
     </div>
+    <script>
 
-   
+
+        let username2 = JSON.parse(localStorage.getItem("name"))
+        let useremail2 = JSON.parse(localStorage.getItem("email"))
+        let userpass2 = JSON.parse(localStorage.getItem("password"))
+
+        // document.getElementById("new").innerHTML = localStorage.getItem("name" );
+        // document.getElementById("new1").innerHTML = localStorage.getItem("email");
+        document.getElementById("new").innerHTML ="Name: " + username2
+        document.getElementById("new1").innerHTML ="Email: " + useremail2
+        document.getElementById("new2").innerHTML ="Password: " + userpass2
+        console.log(username2)
+    </script>
+
+
 
 </html>
